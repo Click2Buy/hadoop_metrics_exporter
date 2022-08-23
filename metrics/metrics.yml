@@ -1,0 +1,91 @@
+hbase:
+  SystemCpuLoad:
+    desc: 'cpu hive server'
+    metricType: 'gauge'
+  numRegionServers:
+    desc: 'Number of regions servers'
+    metricType: 'gauge'
+  numDeadRegionServers:
+    desc: 'Number of dead regions servers'
+    metricType: 'gauge'
+  ritCount:
+    desc: 'Number of region in transition '
+    metricType: 'gauge'
+  ritCountOverThreshold:
+    desc: 'Number of region in trasition more longer that the de threshold time'
+    metricType: 'gauge'
+  ritOldestAge:
+    desc: 'The age of the longest region in transition, in milliseconds'
+    metricType: 'gauge'
+yarn:
+  lostNodes:
+    desc: 'yarn nodes lost'
+    metricType: 'gauge'
+  rebootedNodes:
+    desc: 'yarn nodes rebooted'
+    metricType: 'gauge'
+  unhealthyNodes:
+    desc: 'yarn nodes unhealthyNodes'
+    metricType: 'gauge'
+  totalNodes:
+    desc: 'yarn nodes'
+    metricType: 'gauge'
+  activeNodes:
+    desc: 'yarn nodes active'
+    metricType: 'gauge'
+namenode:
+  CapacityTotalGB:
+    desc: 'namenode capacity Total'
+    metricType: 'gauge'
+  CapacityRemainingGB:
+    desc: 'namenode capacity remaining '
+    metricType: 'gauge'
+  CorruptBlocks:
+    desc: 'namenode corrupt block'
+    metricType: 'gauge'
+  ExcessBlocks:
+    desc: 'namenode excess block'
+    metricType: 'gauge'
+  MissingBlocks:
+    desc: 'namenode missing blocks'
+    metricType: 'gauge'
+  NumDeadDataNodes:
+    desc: 'namenode dead datanode'
+    metricType: 'gauge'
+  NumStaleStorages:
+    desc: 'namenode stale datanode '
+    metricType: 'gauge'
+  NumLiveDataNodes:
+    desc: 'namenode live datanode'
+    metricType: 'gauge'
+  VolumeFailuresTotal:
+    desc: 'namenode volume datanode'
+    metricType: 'counter'
+hive:
+  OpenFileDescriptorCount:
+    desc: 'hive file open'
+    metricType: 'gauge'
+  MaxFileDescriptorCount:
+    desc: 'hive file max '
+    metricType: 'gauge'
+  TotalSwapSpaceSize:
+    desc: 'hive swap total'
+    metricType: 'gauge'
+  FreeSwapSpaceSize:
+    desc: 'hive free swap'
+    metricType: 'gauge'
+  FreePhysicalMemorySize:
+    desc: 'hive free memory size'
+    metricType: 'gauge'
+  TotalPhysicalMemorySize:
+    desc: 'hive total memory size'
+    metricType: 'gauge'
+  SystemLoadAverage:
+    desc: 'hive system load average'
+    metricType: 'gauge'
+  LoginFailureNumOps:
+    desc: 'Login failed'
+    metricType: 'gauge'
+  hs2_completed_operation_ERROR:
+    desc: 'operation failed'
+    metricType: 'gauge'

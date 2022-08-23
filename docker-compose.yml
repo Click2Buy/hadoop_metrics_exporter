@@ -1,0 +1,11 @@
+version: '3'
+services:
+  hadoop-exporter:
+    build: .
+    container_name: hadoop-exporter
+    hostname: hadoop-exporter
+    ports:
+      - 7629:7629
+    volumes:
+      - ./conf/:/home/prometheus/conf/
+      - ./metrics:/home/prometheus/metrics/

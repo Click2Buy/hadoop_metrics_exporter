@@ -1,0 +1,23 @@
+exporter:
+  bind: 0.0.0.0
+  port: 7629
+  interval: 60
+  verbose: true
+components:
+  hbase:
+    url:        http://hbase/jmx
+    basic_auth:
+      username:   hbase
+      password:   hbase
+  yarn:
+    url:      http://yarn/ws/v1/cluster/metrics
+    basic_auth:
+      username:   yarn
+      password:   yarn
+  namenode:
+    url:      http://namenode.com/jmx
+    basic_auth:
+      username:   namenode
+      password:   namenode
+
+
